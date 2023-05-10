@@ -3,12 +3,13 @@ import './App.css'
 import Navbar from '../src/scenes/navbar/navbar'
 import {SelectedPage} from "@/shared/types";
 import Home from "@/scenes/home/home";
+import Benefits from "@/scenes/benefits/benefits"
 
 
 function App() {
     const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
     const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
-    useEffect(()=>{
+    useEffect(() => {
         const handleScroll = () => {
             switch (window.scrollY) {
                 case 0:
@@ -29,6 +30,7 @@ function App() {
     <div className="app bg-gray-20 bg-">
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
         <Home setSelectedPage={setSelectedPage}/>
+        <Benefits setSelectedPage={setSelectedPage}/>
     </div>
   )
 }
