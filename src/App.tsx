@@ -6,6 +6,7 @@ import Home from "@/scenes/home/home";
 import Benefits from "@/scenes/benefits/benefits"
 import ContactUs from "@/scenes/contactUs/ContactUs";
 import Footer from "@/scenes/footer/Footer";
+import OurClasses from "@/scenes/ourClasses/ourClasses";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
         <Home setSelectedPage={setSelectedPage}/>
         <Benefits setSelectedPage={setSelectedPage}/>
+        <OurClasses setSelectedPage={setSelectedPage}/>
         <ContactUs setSelectedPage={setSelectedPage}/>
         <Footer/>
     </div>

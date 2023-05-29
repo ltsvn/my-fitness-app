@@ -65,8 +65,7 @@ const ContactUs = ({setSelectedPage}: Props) => {
                             visible: {opacity: 1, y: 0},
                         }}
                     >
-                        <form
-                            target="_blank"
+                        <form target="_blank"
                             onSubmit={onSubmit}
                             action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
                             method="POST"
