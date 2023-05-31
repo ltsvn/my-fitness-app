@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ltsvn.github.io/my-fitness-app",
+  "homepage": "https://ltsvn.github.io/myFitnessApp",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
